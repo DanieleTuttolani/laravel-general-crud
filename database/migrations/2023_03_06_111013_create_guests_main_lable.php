@@ -37,8 +37,28 @@ return new class extends Migration
     */
     public function up(): void
     {
-        Schema::create('guests_main_lable', function (Blueprint $table) {
+        Schema::create('guests', function (Blueprint $table) {
             $table->id();
+            $table->string('name', 150);
+            $table->date('born' );
+            $table->enum('gender', ['M' , 'F']);
+            $table->integer('age', 150);
+            $table->string('birth-place', 80)->nullable();
+            $table->integer('CF', 16 );
+            $table->integer('DOC-ID', 15 );
+            $table->date('printing-date')->nullable();
+            $table->float('piastrine', 3 , 1);
+            $table->float('GB', 3 , 1);
+            $table->float('GR', 3 , 1);
+            $table->float('EMO', 3 , 1);
+            $table->float('EMA', 3 , 1);
+            $table->float('VCM', 3 , 1);
+            $table->float('CCM', 3 ,1);
+            $table->float('CMC', 3 , 1);
+            $table->float('AMD', 3 , 1);
+            $table->float('VMP', 3 , 1);
+            $table->float('EMI', 3 , 1);
+            $table->float('ALT', 3 , 1);
             $table->timestamps();
         });
     }
@@ -48,6 +68,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('guests_main_lable');
+        Schema::dropIfExists('guests');
     }
 };
