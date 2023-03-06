@@ -201,11 +201,10 @@
                 <button type="submit" class="btn px-5 border-white btn-primary">INVIA</button>
             </div>
         </form>
-        <form action="{{ route('guests.destroy', $guest->id) }}" method="POST">
+        <form action="{{ route('guests.destroy', $guest->id) }}" method="POST" class="my-2">
             @csrf
             @method('DELETE')
-            <button href class="btn btn-small btn-danger">ELIMINA</a>
-
+            <button href class="btn btn-small btn-danger">ELIMINA</button>
         </form>
         <a href="{{ route('guests.index') }}" class="btn btn-small btn-success">BACK</a>
     </div>
