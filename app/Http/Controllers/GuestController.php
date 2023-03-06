@@ -2,14 +2,17 @@
 
 namespace App\Http\Controllers;
 
+
+
+use App\Models\Guest;
 use Illuminate\Http\Request;
 
 class GuestController extends Controller
 {
     public function index()
     {
-        // $guest = Egg::all();
-        // return view('eggs.index', compact('eggs'));
+        $guests = Guest::all();
+        return view('guests.index', compact('guests'));
     }
 
     /**

@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+
+// Rotte per gestire la risorsa egg
+Route::resource('guests', GuestController::class);
