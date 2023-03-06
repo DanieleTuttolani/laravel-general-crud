@@ -8,7 +8,7 @@
             <ul class="navbar-nav">
                 <li>
                     <a href="{{ route('guests.index') }}"
-                        class="{{ request()->routeIs('eggs.index') ? 'active' : '' }} text-white mx-3">PAZIENTI</a>
+                        class="{{ request()->routeIs('eggs.index') ? 'active' : '' }} text-black mx-3">PAZIENTI</a>
                 </li>
 
             </ul>
