@@ -28,8 +28,8 @@
 
                         {{-- @forelse ($guests as $guest) --}}
                         <tr>
-                            <td>{{ $guest->name }}</td>
-                            <td>{{ $guest->surname }}</td>
+                            {{-- <td>{{ $guest->name }}</td>
+                            <td>{{ $guest->surname }}</td> --}}
 
                             {{-- TODO <td><a href="{{ route('guests.show', $egg->id) }}">
                                         <i class="fa-solid fa-eye"></i>
