@@ -83,6 +83,102 @@
                         name="printing_date" value="{{ old('printing_date') }}">
                 </div>
             </div>
+            {{-- PIASTRINE --}}
+            <div class="col-2">
+                <div class="mb-3">
+                    <label for="piastrine" class="form-label">PIASTRINE':</label>
+                    <input type="number" min="0" class="form-control" id="piastrine" placeholder="Inserisci numero piastrine"
+                        name="piastrine" required>
+                </div>
+            </div>
+            {{-- GB --}}
+            <div class="col-2">
+                <div class="mb-3">
+                    <label for="GB" class="form-label">GB':</label>
+                    <input type="number" min="0" class="form-control" id="GB" placeholder="Inserisci numero GB"
+                        name="GB" required>
+                </div>
+            </div>
+            {{-- GR --}}
+            <div class="col-2">
+                <div class="mb-3">
+                    <label for="GR" class="form-label">GR':</label>
+                    <input type="number" min="0" class="form-control" id="GR" placeholder="Inserisci numero GR"
+                        name="GR" required>
+                </div>
+            </div>
+            {{-- EMO --}}
+            <div class="col-2">
+                <div class="mb-3">
+                    <label for="EMO" class="form-label">EMO':</label>
+                    <input type="number" min="0" class="form-control" id="EMO" placeholder="Inserisci numero EMO"
+                        name="EMO" required>
+                </div>
+            </div>
+            {{-- EMA --}}
+            <div class="col-2">
+                <div class="mb-3">
+                    <label for="EMA" class="form-label">EMA':</label>
+                    <input type="number" min="0" class="form-control" id="EMA" placeholder="Inserisci numero EMA"
+                        name="EMA" required>
+                </div>
+            </div>
+            {{-- VCM --}}
+            <div class="col-2">
+                <div class="mb-3">
+                    <label for="VCM" class="form-label">VCM':</label>
+                    <input type="number" min="0" class="form-control" id="VCM" placeholder="Inserisci numero VCM"
+                        name="VCM" required>
+                </div>
+            </div>
+            {{-- CCM --}}
+            <div class="col-2">
+                <div class="mb-3">
+                    <label for="CCM" class="form-label">CCM':</label>
+                    <input type="number" min="0" class="form-control" id="CCM" placeholder="Inserisci numero CCM"
+                        name="CCM" required>
+                </div>
+            </div>
+            {{-- CMC --}}
+            <div class="col-2">
+                <div class="mb-3">
+                    <label for="CMC" class="form-label">CMC':</label>
+                    <input type="number" min="0" class="form-control" id="CMC" placeholder="Inserisci numero CMC"
+                        name="CMC" required>
+                </div>
+            </div>
+            {{-- AMD --}}
+            <div class="col-2">
+                <div class="mb-3">
+                    <label for="AMD" class="form-label">AMD':</label>
+                    <input type="number" min="0" class="form-control" id="AMD" placeholder="Inserisci numero AMD"
+                        name="AMD" required>
+                </div>
+            </div>
+            {{-- VMP --}}
+            <div class="col-2">
+                <div class="mb-3">
+                    <label for="VMP" class="form-label">VMP':</label>
+                    <input type="number" min="0" class="form-control" id="VMP" placeholder="Inserisci numero VMP"
+                        name="VMP" required>
+                </div>
+            </div>
+            {{-- EMI --}}
+            <div class="col-2">
+                <div class="mb-3">
+                    <label for="EMI" class="form-label">EMI':</label>
+                    <input type="number" min="0" class="form-control" id="EMI" placeholder="Inserisci numero EMI"
+                        name="EMI" required>
+                </div>
+            </div>
+            {{-- ALT --}}
+            <div class="col-2">
+                <div class="mb-3">
+                    <label for="ALT" class="form-label">ALT':</label>
+                    <input type="number" min="0" class="form-control" id="ALT" placeholder="Inserisci numero ALT"
+                        name="ALT" required>
+                </div>
+            </div>
 
 
         </div>
