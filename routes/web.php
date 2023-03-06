@@ -19,3 +19,5 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 
 // Rotte per gestire la risorsa Guest
 Route::resource('guests', GuestController::class);
+
+
