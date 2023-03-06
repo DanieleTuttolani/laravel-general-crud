@@ -18,10 +18,10 @@ return new class extends Migration
             $table->string('surname', 150);
             $table->date('born' );
             $table->enum('gender', ['M' , 'F']);
-            $table->integer('age');
+            $table->string('age');
             $table->string('birth_place', 80)->nullable();
             $table->string('CF');
-            $table->integer('doc_number');
+            $table->string('doc_number');
             $table->date('printing_date')->nullable();
             $table->float('piastrine', 3 , 1);
             $table->float('GB', 3 , 1);

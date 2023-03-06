@@ -28,7 +28,7 @@
                 <div class="mb-3">
                     <label for="born" class="form-label">Data di nascita:</label>
                     <input type="date" class="form-control" id="born"
-                        placeholder="Inserisci data di nascita" name="date">
+                        placeholder="Inserisci data di nascita" name="date" required>
                 </div>
             </div>
             {{-- GENERE --}}
@@ -53,9 +53,9 @@
             {{-- LUOGO DI NASCITA --}}
             <div class="col-5">
                 <div class="mb-3">
-                    <label for="birth-place" class="form-label">Luogo di nascita:</label>
-                    <input type="text" class="form-control" id="birth-place" placeholder="Inserisci luogo di nascita"
-                        name="birth-place" value="{{ old('birth-place') }}">
+                    <label for="birth_place" class="form-label">Luogo di nascita:</label>
+                    <input type="text" class="form-control" id="birth_place" placeholder="Inserisci luogo di nascita"
+                        name="birth_place" value="{{ old('birth_place') }}">
                 </div>
             </div>
 
@@ -70,17 +70,17 @@
             {{-- DOC NUMBER --}}
             <div class="col-4">
                 <div class="mb-3">
-                    <label for="doc-number" class="form-label">ID:</label>
-                    <input type="text" class="form-control" id="doc-number" placeholder="Inserisci ID"
-                        name="doc-number" value="{{ old('doc-number') }}">
+                    <label for="doc_number" class="form-label">ID:</label>
+                    <input type="text" class="form-control" id="doc_number" placeholder="Inserisci ID"
+                        name="doc_number" value="{{ old('doc_number') }}">
                 </div>
             </div>
             {{-- PRINTING DATE --}}
             <div class="col-2">
                 <div class="mb-3">
-                    <label for="printing-date" class="form-label">Data:</label>
-                    <input type="date" class="form-control" id="printing-date" placeholder="Inserisci data odierna"
-                        name="printing-date" value="{{ old('printing-date') }}">
+                    <label for="printing_date" class="form-label">Data:</label>
+                    <input type="date" class="form-control" id="printing_date" placeholder="Inserisci data odierna"
+                        name="printing_date" value="{{ old('printing_date') }}">
                 </div>
             </div>
 

@@ -30,15 +30,14 @@ class GuestController extends Controller
      */
     public function store(Request $request)
     {
-        // $data = $request->all();
-        // $guest = new Guest();
+        $data = $request->all();
+        $guest = new Guest();
 
 
-        // $guest->fill($data);
-
-        // $guest->save();
-        // // per tornare alla route
-        // return to_route('guests.index');
+        $guest->fill($data);
+    $guest->save();
+        // per tornare alla route
+        return to_route('guests.index');
     }
 
     /**
@@ -46,8 +45,8 @@ class GuestController extends Controller
      */
     public function show(string $id)
     {
-        // $guest = Guest::findOrFail($id);
-        // return view('guests.show', compact('guest'));
+         $guest = Guest::findOrFail($id);
+         return view('guests.show', compact('guest'));
     }
 
 
@@ -56,7 +55,7 @@ class GuestController extends Controller
      */
     public function edit(Guest $guest)
     {
-        // return view('guests.edit', compact('guest'));
+         return view('guests.edit', compact('guest'));
     }
 
 
@@ -65,13 +64,13 @@ class GuestController extends Controller
      */
     public function update(Request $request, Guest $guest)
     {
-        // $data = $request->all();
+         $data = $request->all();
 
-        // $guest->fill($data);
+         $guest->fill($data);
 
-        // $guest->save();
+         $guest->save();
 
-        // return to_route('guests.show', $guest->id);
+         return to_route('guests.show', $guest->id);
     }
 
     /**
@@ -79,7 +78,7 @@ class GuestController extends Controller
      */
     public function destroy(Guest $guest)
     {
-        // $guest->delete();
-        // return to_route('guests.index');
+         $guest->delete();
+         return to_route('guests.index');
     }
 }
