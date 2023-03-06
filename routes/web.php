@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\GuestController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,9 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home')->name('home');
-});
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 // Rotte per gestire la risorsa Guest
 Route::resource('guests', GuestController::class);
