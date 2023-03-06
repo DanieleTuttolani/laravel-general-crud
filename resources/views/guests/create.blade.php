@@ -28,7 +28,7 @@
                 <div class="mb-3">
                     <label for="born" class="form-label">Data di nascita:</label>
                     <input type="date" class="form-control" id="born"
-                        placeholder="Inserisci data di nascita" name="date" required>
+                        placeholder="Inserisci data di nascita" name="born" required>
                 </div>
             </div>
             {{-- GENERE --}}
