@@ -20,7 +20,7 @@ class GuestController extends Controller
      */
     public function create()
     {
-        // return view('eggs.create');
+        // return view('guests.create');
     }
 
     /**
@@ -29,14 +29,14 @@ class GuestController extends Controller
     public function store(Request $request)
     {
         // $data = $request->all();
-        // $egg = new Egg();
+        // $guest = new Guest();
 
 
-        // $egg->fill($data);
+        // $guest->fill($data);
 
-        // $egg->save();
+        // $guest->save();
         // // per tornare alla route
-        // return to_route('eggs.index');
+        // return to_route('guests.index');
     }
 
     /**
@@ -44,40 +44,40 @@ class GuestController extends Controller
      */
     public function show(string $id)
     {
-        // $egg = Egg::findOrFail($id);
-        // return view('eggs.show', compact('egg'));
+        // $guest = Guest::findOrFail($id);
+        // return view('guests.show', compact('guest'));
     }
 
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Egg $egg)
+    public function edit(Guest $guest)
     {
-        // return view('eggs.edit', compact('egg'));
+        // return view('guests.edit', compact('guest'));
     }
 
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Egg $egg)
+    public function update(Request $request, Guest $guest)
     {
         // $data = $request->all();
 
-        // $egg->fill($data);
+        // $guest->fill($data);
 
-        // $egg->save();
+        // $guest->save();
 
-        // return to_route('eggs.show', $egg->id);
+        // return to_route('guests.show', $guest->id);
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Egg $egg)
+    public function destroy(Guest $guest)
     {
-        // $egg->delete();
-        // return to_route('eggs.index');
+        // $guest->delete();
+        // return to_route('guests.index');
     }
 }

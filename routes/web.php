@@ -17,5 +17,5 @@ Route::get('/', function () {
     return view('home');
 });
 
-// Rotte per gestire la risorsa egg
+// Rotte per gestire la risorsa Guest
 Route::resource('guests', GuestController::class);
