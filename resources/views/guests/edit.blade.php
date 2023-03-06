@@ -90,7 +90,8 @@
                     <div class="mb-3">
                         <label for="piastrine" class="form-label">PIASTRINE':</label>
                         <input type="number" min="0" class="form-control" id="piastrine"
-                            placeholder="Inserisci numero piastrine" name="piastrine" required>
+                            placeholder="Inserisci numero piastrine" name="piastrine" required
+                            value="{{ old('piastrine') }}">
                     </div>
                 </div>
                 {{-- GB --}}
@@ -98,7 +99,7 @@
                     <div class="mb-3">
                         <label for="GB" class="form-label">GB':</label>
                         <input type="number" min="0" class="form-control" id="GB"
-                            placeholder="Inserisci numero GB" name="GB" required>
+                            placeholder="Inserisci numero GB" name="GB" required value="{{ old('GB') }}">
                     </div>
                 </div>
                 {{-- GR --}}
@@ -106,7 +107,7 @@
                     <div class="mb-3">
                         <label for="GR" class="form-label">GR':</label>
                         <input type="number" min="0" class="form-control" id="GR"
-                            placeholder="Inserisci numero GR" name="GR" required>
+                            placeholder="Inserisci numero GR" name="GR" required value="{{ old('GR') }}">
                     </div>
                 </div>
                 {{-- EMO --}}
@@ -114,7 +115,7 @@
                     <div class="mb-3">
                         <label for="EMO" class="form-label">EMO':</label>
                         <input type="number" min="0" class="form-control" id="EMO"
-                            placeholder="Inserisci numero EMO" name="EMO" required>
+                            placeholder="Inserisci numero EMO" name="EMO" required value="{{ old('EMO') }}">
                     </div>
                 </div>
                 {{-- EMA --}}
@@ -122,7 +123,7 @@
                     <div class="mb-3">
                         <label for="EMA" class="form-label">EMA':</label>
                         <input type="number" min="0" class="form-control" id="EMA"
-                            placeholder="Inserisci numero EMA" name="EMA" required>
+                            placeholder="Inserisci numero EMA" name="EMA" required value="{{ old('EMA') }}">
                     </div>
                 </div>
                 {{-- VCM --}}
@@ -130,7 +131,7 @@
                     <div class="mb-3">
                         <label for="VCM" class="form-label">VCM':</label>
                         <input type="number" min="0" class="form-control" id="VCM"
-                            placeholder="Inserisci numero VCM" name="VCM" required>
+                            placeholder="Inserisci numero VCM" name="VCM" required value="{{ old('VCM') }}">
                     </div>
                 </div>
                 {{-- CCM --}}
@@ -138,7 +139,7 @@
                     <div class="mb-3">
                         <label for="CCM" class="form-label">CCM':</label>
                         <input type="number" min="0" class="form-control" id="CCM"
-                            placeholder="Inserisci numero CCM" name="CCM" required>
+                            placeholder="Inserisci numero CCM" name="CCM" required value="{{ old('CCM') }}">
                     </div>
                 </div>
                 {{-- CMC --}}
@@ -146,7 +147,7 @@
                     <div class="mb-3">
                         <label for="CMC" class="form-label">CMC':</label>
                         <input type="number" min="0" class="form-control" id="CMC"
-                            placeholder="Inserisci numero CMC" name="CMC" required>
+                            placeholder="Inserisci numero CMC" name="CMC" required value="{{ old('CMC') }}">
                     </div>
                 </div>
                 {{-- AMD --}}
@@ -154,7 +155,7 @@
                     <div class="mb-3">
                         <label for="AMD" class="form-label">AMD':</label>
                         <input type="number" min="0" class="form-control" id="AMD"
-                            placeholder="Inserisci numero AMD" name="AMD" required>
+                            placeholder="Inserisci numero AMD" name="AMD" required value="{{ old('AMD') }}">
                     </div>
                 </div>
                 {{-- VMP --}}
@@ -162,7 +163,7 @@
                     <div class="mb-3">
                         <label for="VMP" class="form-label">VMP':</label>
                         <input type="number" min="0" class="form-control" id="VMP"
-                            placeholder="Inserisci numero VMP" name="VMP" required>
+                            placeholder="Inserisci numero VMP" name="VMP" required value="{{ old('VMP') }}">
                     </div>
                 </div>
                 {{-- EMI --}}
@@ -170,7 +171,7 @@
                     <div class="mb-3">
                         <label for="EMI" class="form-label">EMI':</label>
                         <input type="number" min="0" class="form-control" id="EMI"
-                            placeholder="Inserisci numero EMI" name="EMI" required>
+                            placeholder="Inserisci numero EMI" name="EMI" required value="{{ old('EMI') }}">
                     </div>
                 </div>
                 {{-- ALT --}}
@@ -178,7 +179,7 @@
                     <div class="mb-3">
                         <label for="ALT" class="form-label">ALT':</label>
                         <input type="number" min="0" class="form-control" id="ALT"
-                            placeholder="Inserisci numero ALT" name="ALT" required>
+                            placeholder="Inserisci numero ALT" name="ALT" required value="{{ old('ALT') }}">
                     </div>
                 </div>
 
