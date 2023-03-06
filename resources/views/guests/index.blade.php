@@ -26,10 +26,10 @@
                     </thead>
                     <tbody>
 
-                        {{-- @forelse ($guests as $guest) --}}
+                         @forelse ($guests as $guest) 
                         <tr>
-                            {{-- <td>{{ $guest->name }}</td>
-                            <td>{{ $guest->surname }}</td> --}}
+                             <td>{{ $guest->name }}</td>
+                            <td>{{ $guest->surname }}</td> 
 
                             {{-- TODO <td><a href="{{ route('guests.show', $egg->id) }}">
                                         <i class="fa-solid fa-eye"></i>
@@ -47,7 +47,7 @@
 
                     {{-- btn add --}}
                     <div class="d-flex justify-content-end">
-                        {{-- TODO <a href="{{ route('guests.create') }}" class="  btn btn-small btn-success mt-5">ADD</a> --}}
+                         <a href="{{ route('guests.create') }}" class="  btn btn-small btn-success mt-5">ADD</a>
                     </div>
 
                 </div>
