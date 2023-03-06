@@ -25,33 +25,34 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- tabella con valori -->
-                        <!-- qui vai di ciclo -->
-                        @forelse ($guests as $guest)
-                            <tr>
-                                <td>{{ $guest->name }}</td>
-                                <td>{{ $guest->surname }}</td>
 
-                                {{-- TODO <td><a href="{{ route('guests.show', $egg->id) }}">
+                        {{-- @forelse ($guests as $guest) --}}
+                        <tr>
+                            <td>{{ $guest->name }}</td>
+                            <td>{{ $guest->surname }}</td>
+
+                            {{-- TODO <td><a href="{{ route('guests.show', $egg->id) }}">
                                         <i class="fa-solid fa-eye"></i>
                                     </a></td> --}}
-                            </tr>
+                        </tr>
 
                         @empty
                             <h1 class="text-center">Non ci sono a disposizione pazienti</h1>
-                        @endforelse
+                            @endforelse
 
 
 
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
 
-                {{-- btn add --}}
-                <div class="d-flex justify-content-end">
-                    {{-- TODO <a href="{{ route('guests.create') }}" class="  btn btn-small btn-success mt-5">ADD</a> --}}
+                    {{-- btn add --}}
+                    <div class="d-flex justify-content-end">
+                        {{-- TODO <a href="{{ route('guests.create') }}" class="  btn btn-small btn-success mt-5">ADD</a> --}}
+                    </div>
+
                 </div>
+            </section>
 
-            </div>
-        </section>
-    </div>
-@endsection
+
+        </div>
+    @endsection
