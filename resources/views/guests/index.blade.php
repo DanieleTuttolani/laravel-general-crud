@@ -32,7 +32,7 @@
                                 <td>{{ $guest->name }}</td>
                                 <td>{{ $guest->surname }}</td>
 
-                                {{-- <td><a href="{{ route('guests.show', $egg->id) }}">
+                                {{-- TODO <td><a href="{{ route('guests.show', $egg->id) }}">
                                         <i class="fa-solid fa-eye"></i>
                                     </a></td> --}}
                             </tr>
@@ -48,7 +48,7 @@
 
                 {{-- btn add --}}
                 <div class="d-flex justify-content-end">
-                    {{-- <a href="{{ route('guests.create') }}" class="  btn btn-small btn-success mt-5">ADD</a> --}}
+                    {{-- TODO <a href="{{ route('guests.create') }}" class="  btn btn-small btn-success mt-5">ADD</a> --}}
                 </div>
 
             </div>
