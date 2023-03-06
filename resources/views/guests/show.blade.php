@@ -11,34 +11,91 @@
 
 @section('title', 'Dettaglio')
 @section('content')
+
     <div class="d-flex justify-content-center mt-5">
         <div class="row">
-            <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-title text-center mt-4">
-                        <h6><span class="d-block"> NOME:</span> {{ $guest->name }}{{$guest->surname}}</h6>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">EMOCROMO: {{ $guest->EMO }}</h5>
-                        <p class="card-text">Piastrine: {{ $guest->piastrine }}</p>
-                        <p class="card-text">Globuli Bianchi: {{ $guest->GB }}</p>
-                        <p class="card-text">Globuli Rossi: {{ $guest->GR }}</p>
-                        <p class="card-text">Emoglobina: {{ $guest->EMO }}</p>
-                        <p class="card-text">Ematocito: {{ $guest->EMA }}</p>
-                        <p class="card-text">Volume Cellule Medio: {{ $guest->VCM }}</p>
-                        <p class="card-text">Contenuto Cellul.medio Hb: {{ $guest->CCM }}</p>
-                        <p class="card-text">Ampiezza Media Disturb G.R.: {{ $guest->AMD }}</p>
-                        <p class="card-text">Volume Medio Piastrinico: {{ $guest->VMP }}</p>
-                        <p class="card-text">Emazio Ipocromico: {{ $guest->EMI }}</p>
-                    </div>
-                </div>
-
-            </div>
             <div class="col">
-                <div class="wrapper bg-light rounded-3 p-5">
-
-                   
-
+                <div class="wrapper bg-light rounded-3 p-1">
+                    <div class="d-flex flex-column align-items-center mt-1">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="card-title text-center mt-4">
+                                            <h6><span class="d-block"> NOME COMPLETO: {{$guest->name}} {{$guest->surname}}</span></h6>
+                                            <p>{{$guest->born}} , {{$guest->gender}} , {{$guest->age}} ,<br> Codice Fiscale: {{$guest->CF}}</p>
+                                            <strong>ID:{{$guest->doc_number}}</strong>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Esame</th>
+                                                    <th scope="col">Esito</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                EMOCROMO
+                                                                <td>{{$guest->EMO}}</td>
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Piastrine</th>
+                                                            <td>{{ $guest->piastrine }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Globuli Bianchi</th>
+                                                            <td>{{ $guest->GB }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Globuli Rossi</th>
+                                                            <td colspan="2">{{ $guest->GR }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Emoglobina</th>
+                                                                <td>{{ $guest->EMO }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Ematocirito</th>
+                                                            <td>{{ $guest->EMA }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Volume Cellulare Medio</th>
+                                                            <td>{{ $guest->EMO }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Contenuto Cellul. Media</th>
+                                                            <td>{{ $guest->CCM }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Concentraz.Cellul.medio Hb</th>
+                                                            <td>{{ $guest->CMC }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Ampiezza Media Distib.G.R.</th>
+                                                            <td>{{ $guest->AMD }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Volume Medio Piastrinico</th>
+                                                            <td>{{ $guest->VMP }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Emazie Ipocromiche</th>
+                                                            <td>{{ $guest->EMI }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">ALT (SGPT)</th>
+                                                            <td>{{ $guest->ALT }}</td>
+                                                            <td>U/l</td>
+                                                        </tr>
+                                                         <hr>
+                                       
+                                            </tbody>
+                                        </table>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
                     <div class="info-btn d-flex justify-content-end mt-5">
                         <a href="{{ route('guests.index') }}" class="btn btn-primary"><i
                                 class="fa-regular fa-hand-point-left"></i></a>
@@ -55,4 +112,9 @@
 
         </div>
     </div>
+
+
+
+    {{-- tabella di luca --}}
+
 @endsection

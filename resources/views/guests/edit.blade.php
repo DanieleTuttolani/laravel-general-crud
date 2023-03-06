@@ -182,8 +182,8 @@
                             placeholder="Inserisci numero ALT" name="ALT" required value="{{ old('ALT', $guest->ALT) }}" step=0.1>
                     </div>
                 </div>
-
-
+                
+                
             </div>
             <div class="d-flex justify-content-center p-5">
                 <button type="submit" class="btn px-5 border-white btn-primary">INVIA</button>
@@ -191,6 +191,19 @@
         </form>
         <a href="{{ route('guests.index') }}" class="btn btn-small btn-danger">BACK</a>
     </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
 
 
 @endsection
