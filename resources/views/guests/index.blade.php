@@ -9,7 +9,7 @@
 @section('title', 'Home')
 
 @section('content')
-    <h1 class="text-center p-5 title-text">Benvenuto nella PAGINA DELLE UOVA</h1>
+    <h1 class="text-center p-5 title-text">Benvenuto nella PAGINA My HOSPITAL</h1>
     <div class="container">
 
         <section class="my-5">
