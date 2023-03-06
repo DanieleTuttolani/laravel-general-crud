@@ -20,28 +20,22 @@
                         <tr>
                             <th scope="col">Name</th>
                             <th scope="col">Cognome</th>
-
-
                         </tr>
                     </thead>
                     <tbody>
-
-                         @forelse ($guests as $guest) 
+                        @forelse ($guests as $guest) 
                         <tr>
                              <td>{{ $guest->name }}</td>
                             <td>{{ $guest->surname }}</td> 
-
-                            {{-- TODO <td><a href="{{ route('guests.show', $egg->id) }}">
-                                        <i class="fa-solid fa-eye"></i>
-                                    </a></td> --}}
+                            <td>
+                                <a href="{{ route('guests.show', $guest->id) }}">
+                                    <i class="fa-solid fa-eye"></i>
+                                </a>
+                            </td> 
                         </tr>
-
                         @empty
                             <h1 class="text-center">Non ci sono a disposizione pazienti</h1>
-                            @endforelse
-
-
-
+                        @endforelse
                         </tbody>
                     </table>
 
