@@ -9,6 +9,32 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
+    /*
+    nome
+    nascita
+    sesso
+    età
+    proveninenza
+    cod fiscale 
+    id documento
+    data di stampa
+
+    -------------
+    piastrine 
+    globuli bianchi 
+    globuli rossi
+    emoglobina
+
+    ematocrito
+    volume cellula medio
+    contenuto cellula medio Hb
+    concentrazione cellulare media 
+    ampiezza media disturb G.R
+    volume medio piastrinico 
+    emazie ipocromiche 
+
+    ALT (SGPT)
+    */
     public function up(): void
     {
         Schema::create('guests_main_lable', function (Blueprint $table) {
