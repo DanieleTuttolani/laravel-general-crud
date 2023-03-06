@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Guest;
 
 class GuestController extends Controller
 {
@@ -17,7 +18,7 @@ class GuestController extends Controller
      */
     public function create()
     {
-        // return view('eggs.create');
+        return view('guests.create');
     }
 
     /**
